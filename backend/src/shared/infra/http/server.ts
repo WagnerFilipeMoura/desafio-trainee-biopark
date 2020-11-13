@@ -1,4 +1,8 @@
-import express, { Request, Response } from 'express';
+import 'reflect-metadata';
+
+import express from 'express';
+
+import routes from './routes';
 
 const app = express();
 
