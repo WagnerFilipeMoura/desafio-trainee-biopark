@@ -6,7 +6,9 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.4.0"
   },
   "scripts": {
     "build": "tsc",
