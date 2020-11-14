@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
 import CreateAppointmentService from '../../../services/CreateAppointmentService';
+import SearchByStateService from '../../../services/SearchByStateService';
 
 export default class AppointmentsController {
   public async create(request: Request, response: Response): Promise<Response> {
@@ -18,5 +19,19 @@ export default class AppointmentsController {
     });
 
     return response.json(appointment);
+  }
+
+  public async index(request: Request, response: Response): Promise<Response> {
+    const { id } = request.params;
+
+    const searchByStateService = container.resolve(
+      SearchByStateService,
+    );
+
+    const appointment = await searchByStateService.execute({
+      id
+    });
+
+    return response.json(appointment?.state);
   }
 }

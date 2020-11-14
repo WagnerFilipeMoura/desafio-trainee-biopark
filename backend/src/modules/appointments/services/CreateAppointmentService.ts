@@ -1,4 +1,4 @@
-import { isBefore, parseISO, startOfHour } from "date-fns";
+import { isBefore, parseISO } from "date-fns";
 import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
@@ -34,6 +34,7 @@ class CreateAppointmentService {
       date: dateParsed,
       recipient,
       message,
+      state: "SCHEDULE"
     });
 
     return appointment;
