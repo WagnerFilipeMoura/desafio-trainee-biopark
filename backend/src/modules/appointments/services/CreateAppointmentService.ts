@@ -1,4 +1,4 @@
-import { isBefore, startOfHour, isDate, parseISO, format } from "date-fns";
+import { isBefore, parseISO, startOfHour } from "date-fns";
 import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
@@ -7,7 +7,7 @@ import Appointment from '../infra/typeorm/entities/Appointment';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
 interface IRequest {
-  date: Date;
+  date: string;
   recipient: string;
   message: string;
 }
@@ -24,8 +24,14 @@ class CreateAppointmentService {
     recipient,
     message
   }: IRequest): Promise<Appointment> {
+    const dateParsed = parseISO(date)
+
+    if (isBefore(dateParsed, Date.now())) {
+      throw new AppError("Não é possível realizar agendamento com data/hora retroativa.");
+    }
+
     const appointment = await this.appointmentsRepository.create({
-      date,
+      date: dateParsed,
       recipient,
       message,
     });
