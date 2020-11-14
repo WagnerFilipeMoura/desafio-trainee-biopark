@@ -3,6 +3,7 @@ import { container } from 'tsyringe';
 
 import CreateAppointmentService from '../../../services/CreateAppointmentService';
 import SearchByStateService from '../../../services/SearchByStateService';
+import DeleteAppointmentService from '../../../services/DeleteAppointmentService';
 
 export default class AppointmentsController {
   public async create(request: Request, response: Response): Promise<Response> {
@@ -33,5 +34,19 @@ export default class AppointmentsController {
     });
 
     return response.json(appointment?.state);
+  }
+
+  public async delete(request: Request, response: Response): Promise<Response> {
+    const { id } = request.params;
+
+    const deleteAppointmentService = container.resolve(
+      DeleteAppointmentService,
+    );
+
+    await deleteAppointmentService.execute({
+      id
+    });
+
+    return response.json({});
   }
 }

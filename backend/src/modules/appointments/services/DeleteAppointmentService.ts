@@ -1,6 +1,5 @@
 import { injectable, inject } from 'tsyringe';
 
-import Appointment from '../infra/typeorm/entities/Appointment';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
 interface IRequest {
@@ -8,7 +7,7 @@ interface IRequest {
 }
 
 @injectable()
-class SearchByStateService {
+class DeleteAppointmentService{
   constructor(
     @inject('AppointmentsRepository')
     private appointmentsRepository: IAppointmentsRepository,
@@ -16,11 +15,11 @@ class SearchByStateService {
 
   public async execute({
     id
-  }: IRequest): Promise<Appointment | undefined> {
-    const appointment = await this.appointmentsRepository.searchByState(id);
+  }: IRequest): Promise<void> {
+    await this.appointmentsRepository.removeAppointment(id);
 
-    return appointment;
+    return;
   }
 }
 
-export default SearchByStateService;
+export default DeleteAppointmentService;
