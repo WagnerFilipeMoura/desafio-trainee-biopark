@@ -20,7 +20,8 @@ class AppointmentsRepository implements IAppointmentsRepository {
     const appointment = this.ormRepository.create({
       date,
       recipient,
-      message
+      message,
+      state: 'SCHEDULE'
     })
 
     await this.ormRepository.save(appointment);

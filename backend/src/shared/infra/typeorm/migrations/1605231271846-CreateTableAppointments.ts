@@ -30,6 +30,11 @@ export class CreateTableAppointments1605231271846 implements MigrationInterface 
               isNullable: false
             },
             {
+              name: 'state',
+              type: 'varchar',
+              isNullable: false
+            },
+            {
               name: 'created_at',
               type: 'timestamp',
               default: 'now()',

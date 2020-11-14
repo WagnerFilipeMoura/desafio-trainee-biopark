@@ -20,6 +20,9 @@ class Appointment {
   @Column()
   message: string;
 
+  @Column()
+  state: string;
+
   @CreateDateColumn()
   created_at: Date;
 
