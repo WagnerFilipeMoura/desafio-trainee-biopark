@@ -30,3 +30,4 @@ yarn dev:server
     * POST (http://localhost:3333/appointments) - Criação do agendamento.
     * GET (http://localhost:3333/appointments/SubstituirPeloIdDoAgendamento) - Verifica o status do agendamento.
     * DELETE (http://localhost:3333/appointments/SubstituirPeloIdDoAgendamento) - Realiza a exclusão do agendamento.
+
