@@ -3,8 +3,8 @@
 </h1>
 
 ## Softwares Necessários
-**Node - Versão > 10**
-**Postgre**
+* Node - Versão > 10
+* Postgre
 
 ## Configurações Iniciais
 1. Para instalar as dependências necessárias do projeto, basta acessar a pasta backend e executar o comando: 
