@@ -42,3 +42,10 @@ yarn dev:server
 <div align="center">
   <a href="https://insomnia.rest/run/?label=Desafio%20Trainee%20Biopark&uri=https%3A%2F%2Fgithub.com%2FWagnerFilipeMoura%2Fdesafio-trainee-biopark%2Fblob%2Fmain%2Finsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </div>
+
+## Testes
+1. Para realizar a execução de testes, executar o comando: 
+
+```sh
+yarn jest
+```
