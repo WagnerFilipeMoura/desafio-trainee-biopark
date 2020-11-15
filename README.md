@@ -31,3 +31,8 @@ yarn dev:server
     * GET (http://localhost:3333/appointments/SubstituirPeloIdDoAgendamento) - Verifica o status do agendamento.
     * DELETE (http://localhost:3333/appointments/SubstituirPeloIdDoAgendamento) - Realiza a exclusão do agendamento.
 
+* Acesso ao software com as respectivas rotas configuradas:
+
+<a href="https://insomnia.rest/run/?label=Desafio%20Trainee%20Biopark&uri=https%3A%2F%2Fgithub.com%2FWagnerFilipeMoura%2Fdesafio-trainee-biopark%2Finsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Desafio%20Trainee%20Biopark&uri=https%3A%2F%2Fgithub.com%2FWagnerFilipeMoura%2Fdesafio-trainee-biopark%2Finsomnia.json)
