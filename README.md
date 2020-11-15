@@ -1,6 +1,6 @@
-<h2 align="center">
+<h1 align="center">
   Desafio Trainee Biopark
-</h2>
+</h1>
 
 ## Configurações Iniciais
 1. Para instalar as dependências necessárias do projeto, basta acessar a pasta backend e executar o comando: 
@@ -33,6 +33,6 @@ yarn dev:server
 
 * Acesso ao software com as respectivas rotas configuradas:
 
-<a href="https://insomnia.rest/run/?label=Desafio%20Trainee%20Biopark&uri=https%3A%2F%2Fgithub.com%2FWagnerFilipeMoura%2Fdesafio-trainee-biopark%2Finsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
-
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Desafio%20Trainee%20Biopark&uri=https%3A%2F%2Fgithub.com%2FWagnerFilipeMoura%2Fdesafio-trainee-biopark%2Finsomnia.json)
+<div align="center">
+  <a href="https://insomnia.rest/run/?label=Desafio%20Trainee%20Biopark&uri=https%3A%2F%2Fgithub.com%2FWagnerFilipeMoura%2Fdesafio-trainee-biopark%2Fblob%2Fmain%2Finsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+</div>
