@@ -2,6 +2,10 @@
   Desafio Trainee Biopark
 </h1>
 
+## Softwares Necessários
+**Node - Versão > 10**
+**Postgre**
+
 ## Configurações Iniciais
 1. Para instalar as dependências necessárias do projeto, basta acessar a pasta backend e executar o comando: 
 
@@ -11,13 +15,13 @@ yarn
 
 2. Verificar configurações do banco de dados no arquivo ormconfig.json, se compatível com as configurações do banco de dados local.
 
-3. Realizar a criação manual do banco de dados(Postgre) com o nome: 
+3. Realizar a criação manual do banco de dados(Postgre) com o nome: (Ou nome do banco de dados informado no passo anterior no arquivo ormconfig.json) 
 
 ```sh
 trainee_biopark
 ```
 
-4. Após a verificação das informações no arquivo e criação do banco de dados, executar comando referente as migrations(tabelas e regras) ao banco de dados:
+4. Após a verificação das informações no arquivo e criação do banco de dados, executar comando referente as migrations(tabelas e regras) do banco de dados:
 
 ```sh
 yarn typeorm migration:run
