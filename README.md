@@ -11,13 +11,19 @@ yarn
 
 2. Verificar configurações do banco de dados no arquivo ormconfig.json, se compatível com as configurações do banco de dados local.
 
-3. Após a verificação das informações no arquivo, executar comando referente as migrations ao banco de dados:
+3. Realizar a criação manual do banco de dados com o nome: 
+
+```sh
+trainee_biopark
+```
+
+4. Após a verificação das informações no arquivo e criação do banco de dados, executar comando referente as migrations(tabelas e regras) ao banco de dados:
 
 ```sh
 yarn typeorm migration:run
 ```
 
-4. Iniciar o servidor em localhost, executar o comando:
+5. Iniciar o servidor em localhost, executar o comando:
 
 ```sh
 yarn dev:server
