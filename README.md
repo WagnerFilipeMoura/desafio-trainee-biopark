@@ -9,7 +9,7 @@
 yarn
 ```
 
-2. Verificar configurações do banco de dados no arquivo ormconfig.json, se compatível com o computador local.
+2. Verificar configurações do banco de dados no arquivo ormconfig.json, se compatível com as configurações do banco de dados local.
 
 3. Após a verificação das informações no arquivo, executar comando referente as migrations ao banco de dados:
 
