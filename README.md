@@ -1,9 +1,9 @@
-<h3 align="center">
+<h2 align="center">
   Desafio Trainee Biopark
-</h3>
+</h2>
 
 ## Configurações Iniciais
-1. Para instalar as dependencias necessárias do projeto, basta executar o comando: 
+1. Para instalar as dependências necessárias do projeto, basta acessar a pasta backend e executar o comando: 
 
 ```sh
 yarn
@@ -17,10 +17,16 @@ yarn
 yarn typeorm migration:run
 ```
 
+4. Executar servidor em localhost, executar o comando:
+
+```sh
+yarn dev:server
+```
+
 ## Instruções
 
 * Endereço local de acesso a API: http://localhost:3333
 * As rotas disponíveis são:
     * POST (http://localhost:3333/appointments) - Criação do agendamento.
-    * GET (http://localhost:3333/appointments/substituir pelo id do agendamento) - Verifica o status do agendamento.
-    * DELETE (http://localhost:3333/appointments/substituir pelo id do agendamento) - Realiza a exclusão do agendamento.
+    * GET (http://localhost:3333/appointments/SubstituirPeloIdDoAgendamento) - Verifica o status do agendamento.
+    * DELETE (http://localhost:3333/appointments/SubstituirPeloIdDoAgendamento) - Realiza a exclusão do agendamento.
