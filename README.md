@@ -11,7 +11,7 @@ yarn
 
 2. Verificar configurações do banco de dados no arquivo ormconfig.json, se compatível com as configurações do banco de dados local.
 
-3. Realizar a criação manual do banco de dados com o nome: 
+3. Realizar a criação manual do banco de dados(Postgre) com o nome: 
 
 ```sh
 trainee_biopark
