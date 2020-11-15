@@ -4,6 +4,7 @@ import IAppointmentsRepository from '@modules/appointments/repositories/IAppoint
 import ICreateAppointmentDTO from '@modules/appointments/dtos/ICreateAppointmentDTO';
 
 import Appointment from '../../infra/typeorm/entities/Appointment';
+import { parseISO } from 'date-fns';
 
 class AppointmentsRepository implements IAppointmentsRepository {
   private appointments: Appointment[] = [];
@@ -12,16 +13,17 @@ class AppointmentsRepository implements IAppointmentsRepository {
     date,
     recipient,
     message,
-    state
   }: ICreateAppointmentDTO): Promise<Appointment> {
     const appointment = new Appointment();
 
+    const dateParsed = parseISO(String(date));
+
     Object.assign(appointment, {
       id: uuid(),
-      date,
+      date: dateParsed,
       recipient,
       message,
-      state
+      state: "SCHEDULE"
     });
 
     this.appointments.push(appointment);
