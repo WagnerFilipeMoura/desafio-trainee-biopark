@@ -17,7 +17,7 @@ yarn
 yarn typeorm migration:run
 ```
 
-4. Executar servidor em localhost, executar o comando:
+4. Iniciar o servidor em localhost, executar o comando:
 
 ```sh
 yarn dev:server
